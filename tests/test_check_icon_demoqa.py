@@ -2,13 +2,13 @@
 # from selenium.webdriver.common.by import By
 from pages.demoqa import DemoQa
 
-
 def test_enter(browser):
     demo_page = DemoQa(browser)
     demo_page.visit()
-    demo_page.click_on_the_icon()
+    demo_page.icon.click()
     assert demo_page.equal_url()
-    assert demo_page.exist_icon()
+    assert demo_page.icon.exist()
+
 
 
     # browser.get('https://demoqa.com/')
